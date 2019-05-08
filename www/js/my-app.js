@@ -201,7 +201,7 @@ function getInfoPosition(lat, long)
             
             city = data.results[0].components.city;
             country = data.results[0].components.country;
-
+            alert("Welcome to "+ country, " ", city);
             //peace of code to get the currency
             codeCountry= data.results[0].components["ISO_3166-1_alpha-3"];
 
