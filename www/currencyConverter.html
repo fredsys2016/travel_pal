@@ -1,0 +1,41 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding"></div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="currencyConverter" class="page">
+        <div class="page-content">
+            <div class="content-block-title titleLabel">Currency Converter</div>
+            <div class="containerForm">
+                <table class="tblForm">
+                    <tr>
+                        <th> <div class="color-white" id="currencyUno">Uno</div></th>
+                        <th> <p  onclick="exchangeCurrency()"><i class="color-white f7-icons">reload_round</i></p></th>
+                        <th> <div class="color-white" id="currencyDos" >Dos</div></th>
+                    </tr>
+                    <tr>
+                        <td> <input class="active"  type="number" id="amount" > </td>
+                        <td> <p  onclick="convertCurrency()"><i class="color-blue f7-icons">play_round</i></p></td>
+                        <td><input type="number" id="result" disabled></td>
+
+                    </tr>
+                </table>
+            </div>
+            <div class="content-block titleLabel" >Rate:  <div class="autoSet"> <div>$ 1 = &nbsp; </div> <div id="localS"> &nbsp; </div> <div id="rate"> </div> </div></div><hr>
+
+        </div>
+    </div>
+</div>
